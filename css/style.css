@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 1.2rem;
+    background: #b4b44e;
+}
+a{
+    color: black;
+    text-decoration: none;
+
+}
+
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding:0 2rem;
+}
+.main-header{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.main-header span:nth-child(1){
+    background: green;
+    padding: 0 5px;
+}
+.main-header span:nth-child(2){
+    background:gray;
+    padding: 3px 5px;
+}
+.main-header h1{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20vh;
+}
+.main-header p{
+    font-size: 30px;
+    color: rgb(65, 62, 62);
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    background: rgb(132, 132, 134);
+    margin-bottom: 2.3rem;
+}
+.card h3{
+    font-size: 2rem;
+}
+.card img{
+    height: 400px;
+} 
+.card > div{ 
+    padding: 2rem;
+}
+.card:nth-child(even) img{
+    order: 2;
+} 
+.btn{
+    display: inline-block;
+    background: black;
+    color:white;
+    padding: 0.8rem 1.2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+@media(max-width: 850px){
+    .card img{
+        height: 100%;
+    }
+    
+}
+@media(max-width: 600px){
+    .card {
+       display: block;
+    }
+    .card img{
+        height: 300px;
+    }
+}
